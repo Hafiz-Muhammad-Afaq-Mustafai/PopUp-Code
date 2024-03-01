@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="container">
+    <button type="submit" id="submit-btn" onclick="PopUpOpen()">Submit</button>
+    <div class="pop-up" id="pop-up-container">
+        <img src="tick.png" alt="">
+        <h1>Thank You</h1>
+        <p>Submit Successfully , Thank !</p>
+        <button id="pop-up-ok-btn" onclick="PopUpClose()">Ok</button>
+    </div>
+  </div>
+  <script>
+    let popUpContainer = document.getElementById("pop-up-container")
+
+    function PopUpOpen() {
+      popUpContainer.classList.add("pop-up-open")
+    }
+    function PopUpClose() {
+      popUpContainer.classList.remove("pop-up-open")
+    }
+  </script>
+</body>
+</html>
